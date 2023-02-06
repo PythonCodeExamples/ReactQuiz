@@ -36,7 +36,6 @@ const reducer = (state, action) => {
 
         case "LOADED_QUESTIONS":
             const normalizedQuestions = normalizeQuestions(action.payload);
-            console.log(normalizedQuestions)
             return {
                 ...state,
                 questions: normalizedQuestions,
